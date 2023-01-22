@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1098168466571",
+    "project_id": "dash-coin-sagar",
+    "storage_bucket": "dash-coin-sagar.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1098168466571:android:9dcd353b8bab5f1e40a88e",
+        "android_client_info": {
+          "package_name": "com.example.dash_coin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1098168466571-el8m95li792kmgt2kkfkajm9ovhhqh18.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwwD4p4j3RK87hn819AaxaXDk_ELBc-yM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1098168466571-el8m95li792kmgt2kkfkajm9ovhhqh18.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
