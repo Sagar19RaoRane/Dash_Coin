@@ -1,4 +1,4 @@
-package com.example.dash_coin.ui.theme
+package com.example.dash_coin.presentation.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
