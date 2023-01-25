@@ -3,6 +3,7 @@ package com.example.dash_coin.data.remote
 import com.example.dash_coin.data.dto.ChartDtoCoin
 import com.example.dash_coin.data.dto.CoinDetailDto
 import com.example.dash_coin.data.dto.CoinsDto
+import com.example.dash_coin.data.dto.NewsDto
 import retrofit2.http.GET
 import retrofit2.http.Path
 import retrofit2.http.Query
