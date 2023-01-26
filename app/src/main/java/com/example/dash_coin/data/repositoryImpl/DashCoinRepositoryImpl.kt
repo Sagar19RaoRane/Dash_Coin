@@ -2,7 +2,7 @@ package com.example.dash_coin.data.repositoryImpl
 
 import com.example.dash_coin.data.dto.ChartDtoCoin
 import com.example.dash_coin.data.dto.CoinDetailDto
-import com.example.dash_coin.data.dto.CoinsDto
+import com.example.dash_coin.data.dto.CoinsDetailDto
 import com.example.dash_coin.data.dto.NewsDto
 import com.example.dash_coin.data.remote.DashCoinApi
 import com.example.dash_coin.domain.repository.DashCoinRepository
@@ -11,7 +11,7 @@ import javax.inject.Inject
 class DashCoinRepositoryImpl @Inject constructor(
     private val api:DashCoinApi
 ):DashCoinRepository     {
-    override suspend fun getCoins(): CoinsDto {
+    override suspend fun getCoins(): CoinsDetailDto {
         return api.getCoins()
     }
 

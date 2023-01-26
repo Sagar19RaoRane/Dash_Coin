@@ -1,5 +1,7 @@
 package com.example.dash_coin.data.dto
 
+import com.example.dash_coin.domain.Model.NewsDetail
+
 data class News(
     val coins: List<Any>,
     val content: Boolean,
@@ -16,3 +18,17 @@ data class News(
     val sourceLink: String,
     val title: String
 )
+
+fun News.toNewsDetail(): NewsDetail {
+    return NewsDetail(
+        description = description,
+        id = id,
+        imgURL = imgURL,
+        link = link,
+        relatedCoins = relatedCoins,
+        shareURL = shareURL,
+        source = source,
+        sourceLink = sourceLink,
+        title = title
+    )
+}

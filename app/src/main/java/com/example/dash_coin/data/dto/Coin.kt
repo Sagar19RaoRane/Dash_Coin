@@ -1,5 +1,7 @@
 package com.example.dash_coin.data.dto
 
+import com.example.dash_coin.domain.Model.Coins
+
 data class Coin(
     val availableSupply: Int,
     val exp: List<String>,
@@ -19,3 +21,15 @@ data class Coin(
     val volume: Double,
     val websiteUrl: String
 )
+fun Coin.toCoins(): Coins {
+    return Coins(
+        id,
+        icon,
+        marketCap,
+        name,
+        price,
+        priceChange1d,
+        rank,
+        symbol
+    )
+}

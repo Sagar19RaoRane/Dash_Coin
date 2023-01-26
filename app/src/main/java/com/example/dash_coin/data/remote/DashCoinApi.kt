@@ -2,7 +2,7 @@ package com.example.dash_coin.data.remote
 
 import com.example.dash_coin.data.dto.ChartDtoCoin
 import com.example.dash_coin.data.dto.CoinDetailDto
-import com.example.dash_coin.data.dto.CoinsDto
+import com.example.dash_coin.data.dto.CoinsDetailDto
 import com.example.dash_coin.data.dto.NewsDto
 import retrofit2.http.GET
 import retrofit2.http.Path
@@ -14,7 +14,7 @@ interface DashCoinApi {
 suspend fun getCoins(
     @Query("currency") currency:String = "USD",
     @Query("skip") skip: Int =0
-): CoinsDto
+): CoinsDetailDto
 
 @GET("v1/coins/{coinId}")
 suspend fun getCoinById(
